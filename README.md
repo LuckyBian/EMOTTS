@@ -6,14 +6,9 @@
 
 
 ## Training Exmaple
-```sh
-# LJ Speech
-python train.py -c configs/ljs_base.json -m ljs_base
-
-# VCTK
-python train_ms.py -c configs/vctk_base.json -m vctk_base
+```
+python train.py -c path/to/json -m model
 ```
 
 
 ## Inference Example
-See [inference.ipynb](inference.ipynb)
