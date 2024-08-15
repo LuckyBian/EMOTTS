@@ -1,5 +1,7 @@
 # EMOTTS: Multilingual Emotion-Controlled Voice Cloning Text-to-Speech System
 
+<img src="img/emo-tts.png"
+     style="float: left; margin-right: 0px;" />
 
 ## Create Env
 ```
