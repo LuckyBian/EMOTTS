@@ -4,7 +4,7 @@ import random
 import numpy as np
 import torch
 import torch.utils.data
-from transformers import BertTokenizer, BertModel
+
 import torch
 import commons 
 from mel_processing import spectrogram_torch
@@ -12,9 +12,11 @@ from utils import load_wav_to_torch, load_filepaths_and_text
 from text import text_to_sequence
 from text import text_to_sequence2
 from torchaudio.transforms import MelSpectrogram
+
+from transformers import BertTokenizer, BertModel
 # 加载 RoBERTa-wwm-ext 模型的 Tokenizer 和 Model
-tokenizer = BertTokenizer.from_pretrained('hfl/chinese-roberta-wwm-ext')
-model = BertModel.from_pretrained('hfl/chinese-roberta-wwm-ext')
+tokenizer = BertTokenizer.from_pretrained('/home/weizhenbian/vits_emo2/chinese-roberta-wwm-ext')
+model = BertModel.from_pretrained('/home/weizhenbian/vits_emo2/chinese-roberta-wwm-ext')
 
 class TextAudioLoader(torch.utils.data.Dataset):
     """
