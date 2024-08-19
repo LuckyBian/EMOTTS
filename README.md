@@ -16,6 +16,10 @@ pip install -r requirements.txt
 python env.py
 ```
 
+## Download Pre-trained Model
+
+Download the model by this [link](https://huggingface.co/hfl/chinese-roberta-wwm-ext/tree/main), and then put them into /chinese-roberta-wwm-ext
+
 ## Collecting Data
 
 Collet the data by [this](https://github.com/LuckyBian/DialogExtractor)
